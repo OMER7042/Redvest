@@ -15,7 +15,7 @@ const Leaderboard = () => {
   };
 
   const sortLeaderboard = () => {
-    const sortedUsers = sortUsersByScore(users);
+    const sortedUsers = sortUsersByScore(users); // Call the sort function
     setUsers(sortedUsers);
   };
 
