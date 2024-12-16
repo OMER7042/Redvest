@@ -8,7 +8,9 @@ const Leaderboard = () => {
     { id: "3", name: "Charlie", score: 80 },
   ]);
 
+// Helper function to sort users by score in descending order
   const sortUsersByScore = (usersArray: typeof users) => {
+    // Use spread operator to create a copy of the array before sorting and sort with correct logic
     return [...usersArray].sort((a, b) => b.score - a.score);
   };
 
